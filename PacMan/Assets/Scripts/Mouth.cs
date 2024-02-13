@@ -20,9 +20,6 @@ public class Mouth : MonoBehaviour
         powerpelletmap = PowerPellets.GetComponent<Tilemap>();
     }
 
-    void Update(){
-    }
-
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.CompareTag("pellet")){
             gamemanager.score += 10;

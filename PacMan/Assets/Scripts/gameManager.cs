@@ -8,9 +8,6 @@ public class gameManager : MonoBehaviour
 {
     public int score = 0;
     [SerializeField] TMP_Text scoretxt;
-    void Start(){
-        
-    }
 
     void Update(){
         scoretxt.text = "score: " + score;
